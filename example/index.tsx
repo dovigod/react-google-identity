@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { useGoogleIdentity } from "../dist/index";
-const A = () => {
-  const CLIENT_ID =
-    "195840463461-tcb4a2p2o10of6kpvpeqnnbmj2k075hr.apps.googleusercontent.com";
+import { useGoogleIdentity } from "../src/index";
+
+const UnitTestComponent = () => {
+  const CLIENT_ID = "my client id";
   const { hostRef } = useGoogleIdentity({
     clientId: CLIENT_ID,
     callback: (res: any) => alert(res),
@@ -16,6 +16,6 @@ const A = () => {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <A />
+    <UnitTestComponent />
   </React.StrictMode>
 );
