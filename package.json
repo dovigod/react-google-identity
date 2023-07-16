@@ -3,8 +3,7 @@
   "version": "0.0.2",
   "type": "module",
   "author": {
-    "name": "dovigod",
-    "email": "inaki96@naver.com"
+    "name": "dovigod"
   },
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
